@@ -1,0 +1,13 @@
+
+{
+    "directed" : true,
+    "vertices" : ["v1","v2","v3","v4","v5"],
+    "edges" : [
+        {"start" : "v1" ,"end" : "v2" ,"weight" : 8},
+        {"start" : "v1" ,"end" : "v5" ,"weight" : 7},
+        {"start" : "v1" ,"end" : "v3" ,"weight" : 1},
+        {"start" : "v2" ,"end" : "v4" ,"weight" : 1},
+        {"start" : "v3" ,"end" : "v5" ,"weight" : 5},
+        {"start" : "v1" ,"end" : "v4" ,"weight" : 3}
+    ]
+}
