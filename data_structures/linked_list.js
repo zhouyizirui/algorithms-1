@@ -148,4 +148,7 @@ LinkedList.prototype.forEach = function (fn) {
   }
 };
 
+
+
+
 module.exports = LinkedList;
