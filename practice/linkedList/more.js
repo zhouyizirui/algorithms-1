@@ -1,7 +1,6 @@
 var LinkedList = require('../../data_structures/linked_list');
 var initLinkedList = require('./initLinkedList');
 
-
 LinkedList.prototype.find = function(item){
     var node = this.head;
     var index = 0;
@@ -17,7 +16,6 @@ LinkedList.prototype.find = function(item){
     }
     return null;
 };
-
 LinkedList.prototype.destory = function(){
     var point = this.head;
     while(!!point){
@@ -34,7 +32,6 @@ LinkedList.prototype.delAll = function(item){
         point = point.next;
     }
 };
-
 LinkedList.prototype.invert = function(){
     var p = this.head,
         q = null,
@@ -47,7 +44,6 @@ LinkedList.prototype.invert = function(){
     }
     this.head = q;
 };
-
 LinkedList.prototype.connect = function(list){
     var p;
     for(p = this.head; p.next!=null;p= p.next){}
@@ -79,31 +75,14 @@ LinkedList.prototype.copy = function(){
     }
     return b;
 };
+LinkedList.prototype.circular = function(){
+    this.tail.next = this.head;
+    return this;
+};
 var linkedList = initLinkedList.build(LinkedList);
-var copyList = linkedList.copy();
-copyList.forEach(function(v){
-    console.log(v);
-});
+var circular = linkedList.circular();
 
 
-/*var testList = initLinkedList.build(LinkedList);
-var finalList = linkedList.merge(testList);
-finalList.forEach(function(v){
-    console.log(v);
-});*/
-
-/*linkedList.invert();
-var testList = initLinkedList.build(LinkedList);
-linkedList.connect(testList);*/
-
-//linkedList.delAll(1);
-
-//linkedList.destory();
 
 
-//console.log(linkedList.find(5));
-
- /*linkedList.forEach(function(v){
- console.log(v);
- });*/
 
