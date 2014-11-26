@@ -80,7 +80,6 @@ LinkedList.prototype.circular = function(){
     return this;
 };
 var linkedList = initLinkedList.build(LinkedList);
-var circular = linkedList.circular();
 
 
 
