@@ -52,6 +52,7 @@ BST.prototype.insert = function (value, parent) {
     parent[child] = new Node(value, parent);
     this._size++;
   }
+  return parent[child];
 };
 
 /**

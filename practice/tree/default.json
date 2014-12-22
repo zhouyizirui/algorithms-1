@@ -6,11 +6,7 @@
             "left":{
                 "weight": 6,
                 "left":null,
-                "right":{
-                    "weight": 8,
-                    "left": null,
-                    "right": null
-                }
+                "right":null
             },
             "right":{
                 "weight": 8,

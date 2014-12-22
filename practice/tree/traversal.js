@@ -35,13 +35,13 @@ Tree.prototype.Level = function(){
    return nodes;
 };
 var tree = initTree.build(Tree);
-tree.DLR(function(v){
+/*tree.DLR(function(v){
   console.log(v);
-});
+});*/
 tree.LRD(function(v){
   console.log(v);
 });
-tree.LDR(function(v){
+/*tree.LDR(function(v){
     console.log(v);
-});
-console.log(tree.Level());
+});*/
+//console.log(tree.Level());
