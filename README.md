@@ -1,6 +1,5 @@
 algorithms
 ==========
 
-Base on [felipernb](https://github.com/felipernb/algorithms.js)
+https://leetcode.com
 
-The practice directory is my work.
